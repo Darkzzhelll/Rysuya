@@ -1,0 +1,156 @@
+body {
+  font-family: "Font Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(#162c41, #21405d);
+  perspective: 1000px;
+}
+
+.jumbotron {
+  padding: 8rem 2.75rem;
+}
+.myproject {
+  padding: 2rem 8rem;
+  z-index: 3;
+}
+.wadah {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* circle */
+.circle1,
+.circle2 {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 636px;
+  left: -5%;
+  height: 158px;
+  width: 158px;
+  background-color: #05dbf3;
+  filter: blur(200px);
+  z-index: 2;
+}
+.circle2 {
+  top: 185px;
+  left: 80%;
+  height: 242px;
+  width: 242px;
+  background-color: #db75ff;
+  filter: blur(200px);
+  z-index: 2;
+}
+/* akhir circle */
+
+/* font */
+@font-face {
+  font-family: "Font Kanit";
+  src: url("font/Kanit-SemiBold.ttf");
+}
+
+.info h1 {
+  font-size: 46px;
+}
+
+.info h2 {
+  font-size: 30px;
+}
+
+.info h3 {
+  font-size: 25px;
+}
+.info h4 {
+  font-size: 16px;
+}
+
+.roboto {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+/* akhir font */
+
+/* foto */
+.card {
+  transform-style: preserve-3d;
+  max-height: 481px;
+  max-width: 317px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(#32385e, #162c41);
+}
+
+.foto {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* position to bottom and center */
+}
+
+.foto img {
+  border-radius: 30px;
+  z-index: 4;
+  max-width: 35vh;
+  transition: all 0.75s ease-out;
+}
+
+/* akhir foto */
+
+/* button dan cta */
+.sosmed {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.cta {
+  z-index: 3;
+  height: 40px;
+  width: 166px;
+  background-image: linear-gradient(#da4e5b, #7c2029);
+  border-radius: 15px;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icbtn {
+  z-index: 3;
+  height: 40px;
+  width: 40px;
+  background-image: linear-gradient(#162c41, #21405d);
+  border-radius: 15px;
+  overflow: hidden;
+  border: 0px;
+}
+.cv {
+  z-index: 3;
+  height: 40px;
+  width: 166px;
+  background: none;
+  border-radius: 15px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* akhir button dan cta */
+
+/* Myproject  */
+.projectimg {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectimg img {
+  max-width: 1130px;
+  z-index: 4;
+}
+
+/* akhir myproject */
