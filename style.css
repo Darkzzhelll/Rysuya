@@ -6,10 +6,16 @@ body {
 .jumbotron {
   padding: 8rem 2.75rem;
 }
+
 .myproject {
   padding: 2rem 9%;
-  z-index: 3;
 }
+
+.toolcontain {
+  text-align: center;
+  padding: 15rem 9%;
+}
+
 .wadah {
   width: 100%;
   display: flex;
@@ -26,7 +32,7 @@ body {
   opacity: 0.05;
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 901px) {
   div.kanitbg {
     font-size: 200px;
     line-height: 8rem;
@@ -34,18 +40,20 @@ body {
     letter-spacing: 10px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   div.kanitbg {
     font-size: 60px;
     line-height: 2rem;
-    top: 750px+150vh;
+    top: 140vh;
     letter-spacing: 2px;
   }
 }
 
 /* circle */
+
 .circle1,
-.circle2 {
+.circle2,
+.circle3 {
   position: absolute;
   border-radius: 50%;
 }
@@ -53,20 +61,30 @@ body {
 .circle1 {
   top: 636px;
   left: -5%;
-  height: 158px;
-  width: 158px;
+  height: 10%;
+  width: 10%;
   background-color: #05dbf3;
-  filter: blur(200px);
+  filter: blur(130px);
   z-index: 2;
 }
 .circle2 {
-  top: 185px;
-  left: 60%;
-  height: 242px;
-  width: 242px;
+  top: 2%;
+  margin-right: 7%;
+  right: -7%;
+  height: 15%;
+  width: 15%;
   background-color: #db75ff;
   filter: blur(200px);
-  z-index: 3;
+  z-index: 5;
+}
+.circle3 {
+  bottom: 13%;
+  left: 50%;
+  height: 5%;
+  width: 5%;
+  background-color: #db75ff;
+  filter: blur(110px);
+  z-index: 2;
 }
 /* akhir circle */
 
@@ -101,7 +119,7 @@ body {
 
 /* foto */
 .card {
-  z-index: 1;
+  z-index: 3;
   transform-style: preserve-3d;
   max-height: 481px;
   max-width: 317px;
@@ -118,7 +136,7 @@ body {
 }
 
 .foto img {
-  z-index: 2;
+  z-index: 4;
   border-radius: 30px;
   transition: all 0.75s ease-out;
 }
@@ -150,7 +168,7 @@ body {
   background-image: linear-gradient(#162c41, #21405d);
   border-radius: 15px;
   overflow: hidden;
-  border: 0px;
+  border: none;
 }
 .cv {
   z-index: 3;
@@ -182,5 +200,64 @@ body {
 }
 /* akhir myproject */
 
-/* btn */
-/* akhir btn */
+/* Tool & Skill */
+.iccard {
+  z-index: 3;
+  height: 100px;
+  width: 100px;
+  background-image: linear-gradient(#162c41, #21405d);
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.imgtool {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13.5vh;
+}
+
+.imgtool img {
+  width: 70px;
+  z-index: 4;
+}
+/* akhir Tool & Skill */
+
+/* footer */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+.form-control {
+  background: #212529;
+  border-color: #545454;
+}
+
+.form-control:focus {
+  background: #212529;
+}
+
+footer {
+  background: #162c41;
+}
+
+.kotak1,
+.kotak2 {
+  position: absolute;
+  bottom: 0%;
+}
+.kotak1 {
+  left: 45%;
+}
+.kotak2 {
+  left: 35%;
+}
+/* akhir footer */
